@@ -56,7 +56,7 @@ public class TeleOpRobot extends LinearOpMode {
                 takeServos.down();
             }else{
                 takeServos.stop();
-            } //
+            } //adad
         }
     }
 
