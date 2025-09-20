@@ -31,8 +31,7 @@ public class Clutch {
     }
 
     public void close(){
-        clutch_1.setPosition(0.0);
-        clutch_2.setPosition(0.0);
+       setPosition(CLOSED);
     }
 
 }
