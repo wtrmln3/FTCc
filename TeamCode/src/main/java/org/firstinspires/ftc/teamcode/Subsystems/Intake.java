@@ -8,6 +8,9 @@ public class Intake {
 
     public Intake(HardwareMap hardwareMap){
         drum_intake = hardwareMap.dcMotor.get("drum_intake");
+
+        drum_intake.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+        drum_intake.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
     }
 
     public void forward(){
