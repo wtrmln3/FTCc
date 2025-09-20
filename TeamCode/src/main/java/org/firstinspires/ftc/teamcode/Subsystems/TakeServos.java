@@ -4,7 +4,7 @@ import com.arcrobotics.ftclib.command.SubsystemBase;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.hardware.CRServo;
 
-public class TakeServos {
+public class TakeServos extends SubsystemBase{
     private CRServo take_1;
     private CRServo take_2;
 
