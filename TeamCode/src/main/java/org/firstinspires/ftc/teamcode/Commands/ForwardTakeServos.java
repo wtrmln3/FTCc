@@ -7,7 +7,7 @@ import org.firstinspires.ftc.teamcode.Subsystems.TakeServos;
         private final TakeServos takeServos;
         private final double power;
 
-        public ForwardTakeServos(TakeServos takeServos) {
+        public ForwardTakeServos(TakeServos takeServos, double power) {
             this.takeServos = takeServos;
 
             addRequirements(takeServos);
