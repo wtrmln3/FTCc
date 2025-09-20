@@ -25,14 +25,6 @@ public class TakeServos extends SubsystemBase{
 
     }
 
-    public void forward(){
-        setPower(1.0);
-    }
-
-    public void backward(){
-        setPower(-1.0);
-    }
-
     public void stop(){
         setPower(0);
     }
