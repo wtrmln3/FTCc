@@ -17,9 +17,6 @@ public class Intake {
         drum_intake.setPower(power);
     }
 
-    public void backward(){
-        drum_intake.setPower(-1.0);
-    }
 
     public void stop(){
         drum_intake.setPower(0);
