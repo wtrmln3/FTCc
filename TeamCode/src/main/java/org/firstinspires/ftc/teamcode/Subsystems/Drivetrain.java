@@ -37,7 +37,7 @@ public class Drivetrain {
         stop();
     }
 
-    public void driveRobot(double drive, double turn){
+    public void arcadeDrive(double drive, double turn){
         double leftPower = drive + turn;
         double rightPower = drive - turn;
 
