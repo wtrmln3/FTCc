@@ -28,6 +28,10 @@ public class TakeServos {
         setPower(1.0);
     }
 
+    public void backward(){
+        setPower(-1.0);
+    }
+
     public void stop(){
         take_1.setPower(0);
         take_2.setPower(0);
