@@ -24,9 +24,8 @@ public class TakeServos {
 
     }
 
-    public void down(){
-        take_1.setPower(-1.0);
-        take_2.setPower(-1.0);
+    public void forward(){
+        setPower(1.0);
     }
 
     public void stop(){
