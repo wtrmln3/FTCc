@@ -19,7 +19,7 @@ public class Intake {
 
 
     public void stop(){
-        drum_intake.setPower(0);
+        setPower(0);
     }
 
 }
