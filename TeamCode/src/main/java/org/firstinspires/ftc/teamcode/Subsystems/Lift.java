@@ -23,11 +23,6 @@ public class Lift {
         lift_2.setPower(power);
     }
 
-    public void moveDown(){
-        lift_1.setPower(-1.0);
-        lift_2.setPower(-1.0);
-    }
-
     public void stop(){
         setPower(0);
     }
