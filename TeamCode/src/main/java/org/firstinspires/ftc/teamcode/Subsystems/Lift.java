@@ -29,8 +29,7 @@ public class Lift {
     }
 
     public void stop(){
-        lift_1.setPower(0);
-        lift_2.setPower(0);
+        setPower(0);
     }
 
 }
