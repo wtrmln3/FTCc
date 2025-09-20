@@ -13,8 +13,8 @@ public class Intake {
         drum_intake.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
     }
 
-    public void forward(){
-        drum_intake.setPower(1.0);
+    public void setPower(double power){
+        drum_intake.setPower(power);
     }
 
     public void backward(){
