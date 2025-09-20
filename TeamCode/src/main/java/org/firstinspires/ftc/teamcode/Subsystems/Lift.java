@@ -18,9 +18,9 @@ public class Lift {
         lift_2.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
     }
 
-    public void moveUp(){
-        lift_1.setPower(1.0);
-        lift_2.setPower(1.0);
+    public void setPower(double power){
+        lift_1.setPower(power);
+        lift_2.setPower(power);
     }
 
     public void moveDown(){
