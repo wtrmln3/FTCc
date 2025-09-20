@@ -15,6 +15,9 @@ public class Clutch {
         clutch_2 = hardwareMap.get(Servo.class, "clutch_2");
 
         clutch_1.setDirection(Servo.Direction.REVERSE);
+        clutch_2.setDirection(Servo.Direction.FORWARD);
+
+        close();
     }
 
     public void open(){
