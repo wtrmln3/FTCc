@@ -55,6 +55,33 @@ public class Drivetrain {
         rightBack.setPower(rightPower);
     }
 
+    public void tankDrive(double leftPower, double rightPower){
+        leftPower = Math.max(-1.0, Math.min(1.0, leftPower));
+        rightPower = Math.max(-1.0, Math.min(1.0, rightPower));
+
+        if(slowMode){
+            leftPower *= slow;
+            rightPower *= slow;
+        }
+
+        leftFront.setPower(leftPower);
+        leftBack.setPower(leftPower);
+        rightFront.setPower(rightPower);
+        rightBack.setPower(rightPower);
+    }
+
+    public void setSlowModeFactor(double slowFactor){
+        slow = slowFactor;
+    }
+
+    public boolean getSlowMode(){
+        return slowMode;
+    }
+
+    public void switchSlowMode(){
+        slowMode = !slowMode;
+    }
+
     public void stop(){
         leftFront.setPower(0);
         leftBack.setPower(0);
