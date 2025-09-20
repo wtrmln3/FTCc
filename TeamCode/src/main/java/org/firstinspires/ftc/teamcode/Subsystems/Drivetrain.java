@@ -9,6 +9,8 @@ public class Drivetrain {
     private DcMotor leftBack;
     private DcMotor rightFront;
     private DcMotor rightBack;
+    private boolean slowMode = false;
+    private double slow = 1.0;
 
     public Drivetrain(HardwareMap hardwareMap){
         leftFront = hardwareMap.dcMotor.get("leftFront");
