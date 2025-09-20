@@ -33,7 +33,6 @@ public class TakeServos {
     }
 
     public void stop(){
-        take_1.setPower(0);
-        take_2.setPower(0);
+        setPower(0);
     }
 }
