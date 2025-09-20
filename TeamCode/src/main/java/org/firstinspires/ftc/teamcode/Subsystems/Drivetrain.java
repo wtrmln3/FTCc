@@ -41,6 +41,14 @@ public class Drivetrain {
         double leftPower = drive + turn;
         double rightPower = drive - turn;
 
+        leftPower = Math.max(-1.0, Math.min(1.0, leftPower));
+        rightPower = Math.max(-1.0, Math.min(1.0, rightPower));
+
+        if(slowMode){
+            leftPower *= slow;
+            rightPower *= slow;
+        }
+
         leftFront.setPower(leftPower);
         leftBack.setPower(leftPower);
         rightFront.setPower(rightPower);
