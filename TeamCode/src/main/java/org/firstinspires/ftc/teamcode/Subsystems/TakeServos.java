@@ -17,9 +17,10 @@ public class TakeServos {
         stop();
     }
 
-    public void up(){
-        take_1.setPower(1.0);
-        take_2.setPower(1.0);
+    public void setPower(double power){
+        power = Math.max(-1.0, Math.min(1.0, power));
+        take_1.setPower(power);
+        take_2.setPower(power);
 
     }
 
