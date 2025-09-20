@@ -20,9 +20,10 @@ public class Clutch {
         close();
     }
 
-    public void open(){
-        clutch_1.setPosition(1.0);
-        clutch_2.setPosition(1.0);
+    public void setPosition(double position){
+        position = Math.max(0.0, Math.min(1.0, position));
+        clutch_1.setPosition(position);
+        clutch_2.setPosition(position);
     }
 
     public void close(){
