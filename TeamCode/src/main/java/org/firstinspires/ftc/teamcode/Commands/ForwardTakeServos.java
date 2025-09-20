@@ -9,13 +9,14 @@ import org.firstinspires.ftc.teamcode.Subsystems.TakeServos;
 
         public ForwardTakeServos(TakeServos takeServos, double power) {
             this.takeServos = takeServos;
+            this.power = power;
 
             addRequirements(takeServos);
         }
 
         @Override
         public void initialize() {
-            takeServos.forward();
+            takeServos.setPower(power);
         }
 
         @Override
