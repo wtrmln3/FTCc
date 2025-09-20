@@ -5,6 +5,7 @@ import org.firstinspires.ftc.teamcode.Subsystems.TakeServos;
 
     public class ForwardTakeServos extends CommandBase {
         private final TakeServos takeServos;
+        private final double power;
 
         public ForwardTakeServos(TakeServos takeServos) {
             this.takeServos = takeServos;
