@@ -7,6 +7,9 @@ public class Clutch {
     private Servo clutch_1;
     private Servo clutch_2;
 
+    private final double CLOSED = 0.0;
+    private final double OPEN = 1.0;
+
     public Clutch(HardwareMap hardwareMap){
         clutch_1 = hardwareMap.get(Servo.class, "clutch_1");
         clutch_2 = hardwareMap.get(Servo.class, "clutch_2");
