@@ -12,6 +12,9 @@ public class TakeServos {
         take_2 = hardwareMap.get(CRServo.class, "take_2");
 
         take_1.setDirection(CRServo.Direction.REVERSE);
+        take_2.setDirection(CRServo.Direction.FORWARD);
+
+        stop();
     }
 
     public void up(){
