@@ -26,6 +26,10 @@ public class Clutch {
         clutch_2.setPosition(position);
     }
 
+    public void open(){
+        setPosition(OPEN);
+    }
+
     public void close(){
         clutch_1.setPosition(0.0);
         clutch_2.setPosition(0.0);
