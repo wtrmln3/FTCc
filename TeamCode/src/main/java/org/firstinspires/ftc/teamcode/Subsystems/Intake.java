@@ -1,9 +1,10 @@
 package org.firstinspires.ftc.teamcode.Subsystems;
 
+import com.arcrobotics.ftclib.command.SubsystemBase;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
-public class Intake {
+public class Intake extends SubsystemBase {
     private DcMotor drum_intake;
 
     public Intake(HardwareMap hardwareMap){

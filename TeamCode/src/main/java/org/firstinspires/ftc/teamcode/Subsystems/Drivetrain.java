@@ -1,10 +1,11 @@
 package org.firstinspires.ftc.teamcode.Subsystems;
 
+import com.arcrobotics.ftclib.command.SubsystemBase;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
-public class Drivetrain {
+public class Drivetrain extends SubsystemBase {
     private DcMotor leftFront;
     private DcMotor leftBack;
     private DcMotor rightFront;
@@ -37,7 +38,7 @@ public class Drivetrain {
         stop();
     }
 
-    public void arcadeDrive(double drive, double turn){
+    /*public void arcadeDrive(double drive, double turn){
         double leftPower = drive + turn;
         double rightPower = drive - turn;
 
@@ -53,7 +54,7 @@ public class Drivetrain {
         leftBack.setPower(leftPower);
         rightFront.setPower(rightPower);
         rightBack.setPower(rightPower);
-    }
+    }*/
 
     public void tankDrive(double leftPower, double rightPower){
         leftPower = Math.max(-1.0, Math.min(1.0, leftPower));
