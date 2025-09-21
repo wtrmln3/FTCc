@@ -5,12 +5,12 @@ import com.arcrobotics.ftclib.command.CommandBase;
 
 import java.util.function.DoubleSupplier;
 
-public class Drive extends CommandBase{
+public class DriveCommand extends CommandBase{
     private Drivetrain drive;
     private DoubleSupplier leftSupplier;
     private DoubleSupplier rightSupplier;
 
-    public Drive(Drivetrain drive, DoubleSupplier leftSupplier, DoubleSupplier rightSupplier){
+    public DriveCommand(Drivetrain drive, DoubleSupplier leftSupplier, DoubleSupplier rightSupplier){
         this.drive = drive;
         this.leftSupplier = leftSupplier;
         this.rightSupplier = rightSupplier;
